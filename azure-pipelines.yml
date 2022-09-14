@@ -18,4 +18,4 @@ steps:
     azureSubscription: 'azureprod'
     scriptType: bash
     scriptLocation: inlineScript
-    inlineScript: az deployment group create -g rg-networking -f $(Pipeline.Workspace)/main.bicep
+    inlineScript: az deployment group create -g rg-networking -f ./main.bicep
