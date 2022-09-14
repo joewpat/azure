@@ -8,9 +8,6 @@ trigger:
     include:
     - master
 
-pool:
-  vmImage: ubuntu-latest
-
 steps:
 - task: AzureCLI@2
   displayName: 'Infra Deploy'
