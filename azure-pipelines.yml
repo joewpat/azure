@@ -15,7 +15,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Infra Deploy'
   inputs:
-    azureSubscription: 'prod'
+    azureSubscription: 'joewpat'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: az deployment group create -g rg-networking -f $(Pipeline.Workspace)/main.bicep
