@@ -12,7 +12,7 @@ param joesurfArecords array = [
   }
   {
     name: '@'
-    ip: '104.16.244.78'    
+    ip: '104.16.244.78'
   }
   {
     name: 'www'
