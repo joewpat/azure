@@ -10,9 +10,9 @@ trigger:
 
 steps:
 - task: AzureCLI@2
-  displayName: 'Infra Deploy'
+  displayName: 'Network Deploy'
   inputs:
     azureSubscription: 'azureprod'
     scriptType: bash
     scriptLocation: inlineScript
-    inlineScript: az deployment group create -g rg-networking -f ./main.bicep
+    inlineScript: az deployment group create -g rg-networking -f ./networking/main.bicep
